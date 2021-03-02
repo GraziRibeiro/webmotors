@@ -1,0 +1,44 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id 'org.jetbrains.dokka' version '1.4.10.2'
+}
+group = 'me.GraziRibeiro'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+dependencies {
+
+    //Cucumber
+    testImplementation "io.cucumber:cucumber-java8:2.3.1"
+    testImplementation "io.cucumber:cucumber-junit:6.8.2"
+    testImplementation "io.cucumber:cucumber-core:6.8.2"
+    implementation "io.cucumber:cucumber-java8:2.3.1"
+    implementation "io.cucumber:cucumber-core:6.8.2"
+    implementation "io.cucumber:cucumber-java:6.8.2"
+
+    //JUnit
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit5"
+
+    //Surefire
+    implementation "org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5"
+
+    //Selenium
+    implementation "org.seleniumhq.selenium:selenium-java:3.141.59"
+
+    //Gherkin
+    implementation "io.cucumber:gherkin:15.0.2"
+
+    //Doc
+    implementation "org.jetbrains.dokka:kotlin-as-java-plugin:1.4.10.2"
+
+    //Logger
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+    implementation "ch.qos.logback:logback-core:1.2.3"
+
+}
+compileKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
