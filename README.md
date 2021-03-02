@@ -1,10 +1,10 @@
 <div align="center">
-    <h1>Test Automation Template Project</h1>
+    <h1>WebMotors Automation Project</h1>
 </div>
 
 <div align="center">
 
-The ***Test Automation Template Project*** is responsible for automating business tests performed on the Kestraa interface.
+The ***WebMotors Automation Project*** is responsible for automating the search test for a specific vehicle.
 
 </div>
 
@@ -14,7 +14,7 @@ The ***Test Automation Template Project*** is responsible for automating busines
 
 ```sh
 Platform: JVM (Java)
-Java Version: 11
+Kotlin Version: 1.4.10
 Build System: Gradle
 ```
 
@@ -34,12 +34,12 @@ Build System: Gradle
 
 ```sh
 # HTTPS
-  $ https://github.com/kestraa/test-automation-template-project.git
+  $ https://github.com/GraziRibeiro/webmotors-automation.git
 ```
 
 ```sh
 # SSH
-  $ git@github.com:kestraa/test-automation-template-project.git
+  $ git@github.com:GraziRibeiro/webmotors-automation.git
 ```
 
 ### Build the application
@@ -47,3 +47,7 @@ Build System: Gradle
 ```sh
   $ gradle build
 ```
+
+### Run the application
+
+The Main.kt file, it's responsible for running the test. It's within the `src/test/kotlin` structure.
